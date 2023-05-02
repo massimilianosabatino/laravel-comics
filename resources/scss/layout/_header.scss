@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.375rem;
+    @include container;
+    // padding: 1.1875rem 0 1.1875rem 0;
+}
