@@ -1,0 +1,37 @@
+.sub-menu {
+    height: 155px;
+    background-color: $primary-color;
+
+    .wrapper {
+        @include ms-container;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    :deep(div) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        a {
+            flex-basis: calc(100% / 5);
+            &:hover{
+                animation: 0.5s infinite alternate bounce;
+            }
+            
+            
+            div {
+                justify-content: center;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+        img {
+            max-width: 3.4375rem;
+            max-height: 3.4375rem;
+            margin-right: .75rem;
+        }
+    }
+}

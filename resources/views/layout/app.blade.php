@@ -13,7 +13,7 @@
     <main>
         @yield('page.main')
     </main>
-    <h1>Template Blade and Vite</h1>
+    
     @include('partials.footer')
 
 </body>
