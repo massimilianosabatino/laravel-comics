@@ -20,27 +20,27 @@ Route::get('/', function () {
         'cards' => [
             [
                 'name' => 'digital comics',
-                'url' => asset('resources/img/buy-comics-digital-comics.png'),
+                'url' => Vite::asset('resources/img/buy-comics-digital-comics.png'),
                 'target' => '#'
             ],
             [
                 'name' => 'dc merchandise',
-                'url' => asset('resources/img/buy-comics-merchandise.png'),
+                'url' => Vite::asset('resources/img/buy-comics-merchandise.png'),
                 'target' => '#'
             ],
             [
                 'name' => 'subscription',
-                'url' => asset('resources/img/buy-comics-subscriptions.png'),
+                'url' => Vite::asset('resources/img/buy-comics-subscriptions.png'),
                 'target' => '#'
             ],
             [
                 'name' => 'comic shop locator',
-                'url' => asset('resources/img/buy-comics-shop-locator.png'),
+                'url' => Vite::asset('resources/img/buy-comics-shop-locator.png'),
                 'target' => '#'
             ],
             [
                 'name' => 'dc power visa',
-                'url' => asset('resources/img/buy-dc-power-visa.svg'),
+                'url' => Vite::asset('resources/img/buy-dc-power-visa.svg'),
                 'target' => '#'
             ],
         ],
