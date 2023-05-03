@@ -15,22 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = [
-        'comics' => config('db.comics'),
-        'cards' => config('db.cards'),
-        'menu' => config('db.menu'),
-    ];
+    $comics = config('db.comics');
+    $cards = config('db.cards');
+    $menu = config('db.menu');
     
-    return view('home', $data);
+    return view('home', compact('comics', 'cards', 'menu'));
 })->name('home');
 
 Route::get('/comic', function () {
 
-    $data = [
-        'comics' => config('db.comics'),
-        'cards' => config('db.cards'),
-        'menu' => config('db.menu'),
-    ];
+    $comics = config('db.comics');
+    $cards = config('db.cards');
+    $menu = config('db.menu');
     
-    return view('comic', $data);
+    return view('comic', compact('comics', 'cards', 'menu'));
 })->name('comic');
