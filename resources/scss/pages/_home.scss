@@ -6,62 +6,56 @@
 }
 
 #content {
-    background-color: #1c1c1c
-}
-.container-home {
-    @include ms-container;
-    position: relative;
-    left: 0;
-    top: -1.875rem;
-    .tag{
-        background-color: $ms-primary-color;
-        width: max-content;
-        padding: .9375rem 1.25rem;
-        font-weight: 600;
-        font-size: 1.375rem;
-    }
-    .load-more {
-        display: block;
-        background-color: $ms-primary-color;
-        color: #FFF;
-        padding: .9375rem 3.75rem;
-        font-weight: 600;
-        font-size: 1rem;
-        border: none;
-        margin: auto;
-        cursor: pointer;
+    background-color: #1c1c1c;
 
-        &:hover{
-            background-color: adjust-color($ms-primary-color, $blackness: 30%);
-        }
-    }
-}
+    .container-card {
+        position: relative;
+        left: 0;
+        top: -1.875rem;
 
-section.current {
-    padding: 1.5625rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    div {
-        flex-basis: calc(100% / 6);
-        overflow: hidden;
-        padding: 0 .8125rem;
-        color: #fff;
-        font-size: .625rem;
-        margin-bottom: 2.8125rem;
-        cursor: pointer;
-
-        &:hover {
-            scale: 1.1;
+        .tag{
+            background-color: $ms-primary-color;
+            color: #FFF;
+            width: max-content;
+            padding: .9375rem 1.25rem;
+            font-weight: 600;
+            font-size: 1.375rem;
+            margin-bottom: 1.5625rem;
         }
 
-        :deep(img){
+        div.current {
+
+            div.card {
+                color: #fff;
+                // font-size: .625rem;
+                cursor: pointer;
+    
+                &:hover {
+                    scale: 1.1;
+                }
+
+                .card-img-top{
+                    border-radius: 0;
+                }
+            }
+        }
+        
+        .load-more {
             display: block;
-            width: 100%;
-            margin-bottom: 1.25rem;
-            aspect-ratio: 1/1;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            object-position: top;
+            background-color: $ms-primary-color;
+            color: #FFF;
+            padding: .9375rem 3.75rem;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            margin: auto;
+            cursor: pointer;
+
+            &:hover{
+                background-color: adjust-color($ms-primary-color, $blackness: 30%);
+            }
         }
     }
+
+    
 }
