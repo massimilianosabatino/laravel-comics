@@ -1,19 +1,41 @@
 #details {
-    background-color: $ms-primary-color;
 
-    .container-card {
-        position: relative;
-        left: 0;
-        top: -1.875rem;
+    .band {
+        background-color: $ms-primary-color;
+        height: 5rem;
 
         .tag-img{
-            background-color: $ms-primary-color;
-            color: #FFF;
-            width: max-content;
-            padding: .9375rem 1.25rem;
-            font-weight: 600;
-            font-size: 1.375rem;
-            margin-bottom: 1.5625rem;
+            
+            img {
+                display: block;
+                height: 18.125rem;
+                position: relative;
+                top: -230px;
+                left: 0;
+                border: 1px solid #fff;
+                // left: 0;
+                // top: -1.875rem;
+            }
+        }
+    }
+
+    .stock {
+        --bs-border-color: #4D8045;
+        background-color: #6AAF5F;
+        color: #fff;
+
+        span {
+            color: #C3FD9D;
+        }
+
+        button {
+            color: #fff;
+        }
+    }
+
+    .adv{
+        h2 {
+            font-size: 1rem;
         }
     }
 }
