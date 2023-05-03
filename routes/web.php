@@ -22,9 +22,12 @@ Route::get('/', function () {
     return view('home', compact('comics', 'cards', 'menu'));
 })->name('home');
 
-Route::get('/comic', function () {
+Route::get('/comic/{index}', function ($index) {
 
-    $comics = config('db.comics');
+    //Check index truthiness
+    abort_if(count(config('db.comics')) - 1 < $index, 404);
+    
+    $comics = config('db.comics')[$index];
     $cards = config('db.cards');
     $menu = config('db.menu');
     

@@ -11,6 +11,7 @@
         <div class="tag-img">CURRENT SERIES</div>
         {{-- /Tag serie name --}}
     </div>
+    <div>{{ $comics['title'] }}</div>
 </section>
 {{-- /Main content --}}
 @endsection

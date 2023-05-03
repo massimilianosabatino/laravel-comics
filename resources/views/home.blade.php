@@ -15,16 +15,18 @@
             @foreach ($comics as $comic)
             <div class="col">
                 {{-- Single comic --}}
-                <div class="card bg-transparent border-0 h-100">
-                    {{-- Comic image --}}
-                    <img src="{{ $comic['thumb'] }}" class="card-img-top img-fluid" alt="{{ $comic['title']}}">
-                    {{-- /Comic image --}}
-                    <div class="card-body">
-                        {{-- Comic title --}}
-                        <h5 class="card-title">{{ $comic['title'] }}</h5>
-                        {{-- /Comic title --}}
+                <a href="{{ route('comic', ['index' => $loop->index]) }}">
+                    <div class="card bg-transparent border-0 h-100">
+                        {{-- Comic image --}}
+                        <img src="{{ $comic['thumb'] }}" class="card-img-top img-fluid" alt="{{ $comic['title']}}">
+                        {{-- /Comic image --}}
+                        <div class="card-body">
+                            {{-- Comic title --}}
+                            <h5 class="card-title">{{ $comic['title'] }}</h5>
+                            {{-- /Comic title --}}
+                        </div>
                     </div>
-                </div>
+                </a>
                 {{-- /Single comic --}}
             </div>
             @endforeach
@@ -41,7 +43,7 @@
     <div class="sub-menu">
         <div class="wrapper container">
             <div class="row h-100">
-            @foreach ($cards as $item)    
+            @foreach ($cards as $item)
             <a href="{{ $item['target'] }}" class="col d-flex align-items-center">
                     <img src="{{ Vite::asset($item['url']) }}" alt="Icon {{ $item['name'] }}" class="">
                     <div class="text">{{ $item['name'] }}</div>
