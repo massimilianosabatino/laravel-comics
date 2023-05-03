@@ -39,15 +39,15 @@
 {{-- Secondary menu --}}
 <section>
     <div class="sub-menu">
-        <div class="wrapper">
+        <div class="wrapper container">
+            <div class="row h-100">
             @foreach ($cards as $item)    
-            <a href="{{ $item['target'] }}">
-                <div>
-                    <img src="{{ $item['url'] }}" alt="Icon {{ $item['name'] }}">
+            <a href="{{ $item['target'] }}" class="col d-flex align-items-center">
+                    <img src="{{ $item['url'] }}" alt="Icon {{ $item['name'] }}" class="">
                     <div class="text">{{ $item['name'] }}</div>
-                </div>
             </a>
             @endforeach
+            </div>
         </div>
     </div>
 </section>
