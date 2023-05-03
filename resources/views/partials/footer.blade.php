@@ -64,16 +64,18 @@
         </div>
     </section>
     <div class="bg-actions">
-        <div class="ms-container">
-            <button type="button">SIGN-UP NOW!</button>
-            <div class="wrapper">
-                <div class="title">FOLLOW US</div>
-                <div class="icons">
-                    <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="Logo Facebook"></a>
-                    <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="Logo Twitter"></a>
-                    <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="Logo Youtube"></a>
-                    <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="Logo Pinterest"></a>
-                    <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="Logo Periscope"></a>
+        <div class="ms-container container">
+            <div class="row justify-content-between align-items-center">
+                <button type="button" class="col-2">SIGN-UP NOW!</button>
+                <div class="wrapper col-5">
+                    <div class="title">FOLLOW US</div>
+                    <div class="icons">
+                        <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="Logo Facebook"></a>
+                        <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="Logo Twitter"></a>
+                        <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="Logo Youtube"></a>
+                        <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="Logo Pinterest"></a>
+                        <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="Logo Periscope"></a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -137,11 +137,11 @@ div.category {
     background-color: #303030;
 }
 .ms-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
     padding: 1.875rem 0 1.1875rem 0;
-    @include ms-container;
+    // @include ms-container;
 
     button {
         background-color: transparent;
