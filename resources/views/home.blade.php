@@ -2,7 +2,7 @@
 
 @section('page.main')
 {{-- Jumbo --}}
-<section id="jumbo"></section>
+@include('partials.jumbo')
 {{-- /Jumbo --}}
 {{-- Main content --}}
 <section id="content">
@@ -43,7 +43,7 @@
             <div class="row h-100">
             @foreach ($cards as $item)    
             <a href="{{ $item['target'] }}" class="col d-flex align-items-center">
-                    <img src="{{ $item['url'] }}" alt="Icon {{ $item['name'] }}" class="">
+                    <img src="{{ Vite::asset($item['url']) }}" alt="Icon {{ $item['name'] }}" class="">
                     <div class="text">{{ $item['name'] }}</div>
             </a>
             @endforeach
