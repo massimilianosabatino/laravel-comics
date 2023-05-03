@@ -1,37 +1,11 @@
 <footer>
-    {{-- <section class="bg">
-        <div class="secondary-menu">
-            <div class="menu container">
-                @foreach ($menu as $item)    
-                <ul class="category">
-                    <li>
-                        <a href="{{$item['link']}}" target="{{$item['target']}}">
-                            {{ $item['section'] }}
-                        </a>
-                        <ul class="link">
-                            
-                            @foreach ($item['linkList'] as $link)    
-                            <li>
-                                <a href="{{$link['link']}}" target="{{$link['target']}}">
-                                    {{$link['name']}}
-                                </a>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                </ul>
-                @endforeach
-            </div>
-            <div class="logo-img">
-                <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="Logo DC">
-                
-            </div>
-        </div>
-    </section> --}}
     <section class="bg">
+        {{-- Container menu and logo --}}
         <div class="secondary-menu container">
+            {{-- Secondary menu --}}
             <div class="menu h-100">
                 <div class="category  h-100">
+                    {{-- Menu element --}}
                     <div class="row flex-column h-100">
                         @foreach ($menu as $item)    
                         <div class="col-4">
@@ -51,23 +25,31 @@
                         </div>
                         @endforeach
                     </div>
+                    {{-- /Menu element --}}
+                    {{-- Disclaimer --}}
                     <div class="disclaimer">
                         <p>
                             All Site Content TM and &copy 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All right reserved. <a href="#">Cookies Settings</a>
                         </p>
                     </div>
+                    {{-- /Disclaimer --}}
                 </div>
             </div>
+            {{-- /Secondary menu --}}
             <div class="logo-img">
                 <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="Logo DC">
             </div>
         </div>
+        {{-- /Container menu and logo --}}
     </section>
-    <div class="bg-actions">
-        <div class="ms-container container">
+    <section class="bg-actions">
+        <div class="container">
             <div class="row justify-content-between align-items-center">
+                {{-- Call to action --}}
                 <button type="button" class="col-2">SIGN-UP NOW!</button>
-                <div class="wrapper col-5">
+                {{-- /Call to action --}}
+                {{-- Social icons --}}
+                <div class="social col-5">
                     <div class="title">FOLLOW US</div>
                     <div class="icons">
                         <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="Logo Facebook"></a>
@@ -77,7 +59,8 @@
                         <a href="#" target="_blank"><img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="Logo Periscope"></a>
                     </div>
                 </div>
+                {{-- /Social icons --}}
             </div>
         </div>
-    </div>
+    </section>
 </footer>
