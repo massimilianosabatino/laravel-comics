@@ -1,34 +1,46 @@
 // @use "../assets/style/abstracts/variables" as *;
 // @use "../assets/style/base/typo" as *;
-ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    height: 100%;
-    
-    li {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        position: relative;
-        &:hover::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 5px;
-            width: 100%;
-            background-color: $primary-color;
-        }
+#main-menu {
 
-        a {
-            color: #313131;
-            text-decoration: none;
-            @include font-family;
-            margin: 0 .9375rem;
+    ul {
+        // display: flex;
+        // align-items: center;
+        // list-style: none;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        // height: 100%;
+        
+        li {
+            // display: flex;
+            // align-items: center;
+            // height: 100%;
+            position: relative;
+            &:hover::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 5px;
+                width: 100%;
+                background-color: $ms-primary-color;
+            }
+    
+            a {
+                // color: #313131;
+                // text-decoration: none;
+                // @include font-family;
+                // margin: 0 .9375rem;
+            }
         }
     }
+    .input-group.border-bottom{
+        --bs-border-color: #0282F9;
+        max-width: fit-content;
+    }
+
+    .dropdown-toggle::after {
+        color: #0282F9;
+    }
 }
+

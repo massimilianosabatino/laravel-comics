@@ -14,7 +14,7 @@
     left: 0;
     top: -1.875rem;
     .tag{
-        background-color: $primary-color;
+        background-color: $ms-primary-color;
         width: max-content;
         padding: .9375rem 1.25rem;
         font-weight: 600;
@@ -22,7 +22,7 @@
     }
     .load-more {
         display: block;
-        background-color: $primary-color;
+        background-color: $ms-primary-color;
         color: #FFF;
         padding: .9375rem 3.75rem;
         font-weight: 600;
@@ -32,7 +32,7 @@
         cursor: pointer;
 
         &:hover{
-            background-color: adjust-color($primary-color, $blackness: 30%);
+            background-color: adjust-color($ms-primary-color, $blackness: 30%);
         }
     }
 }

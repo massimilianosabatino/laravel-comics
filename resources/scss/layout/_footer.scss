@@ -78,13 +78,13 @@ ul.category {
         background-color: transparent;
         color: #fff;
         font-weight: 600;
-        border: 2px solid $primary-color;
+        border: 2px solid $ms-primary-color;
         padding: .875rem;
         @include font-family;
         cursor: pointer;
         
         &:hover {
-            background-color: $primary-color;
+            background-color: $ms-primary-color;
         }
     }
 
@@ -95,7 +95,7 @@ ul.category {
         @include font-family;
 
         .title {
-            color: $primary-color;
+            color: $ms-primary-color;
             font-weight: 600;
             margin-right: 1.875rem;
         }
