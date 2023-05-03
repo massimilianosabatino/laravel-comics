@@ -26,12 +26,19 @@
                 background-color: $ms-primary-color;
             }
     
-            //a {
+            a.active::before {
                 // color: #313131;
                 // text-decoration: none;
                 // @include font-family;
                 // margin: 0 .9375rem;
-            //}
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 5px;
+                width: 100%;
+                background-color: $ms-primary-color;
+            }
         }
     }
     .input-group.border-bottom{

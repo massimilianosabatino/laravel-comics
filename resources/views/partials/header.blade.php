@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white" id="main-menu">
             <div class="container-fluid">
                 {{-- Logo --}}
-                <a class="navbar-brand logo" href="{{ route('home') }}">
+                <a class="navbar-brand logo" href="{{ route('comics') }}">
                     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo DC Comics">
                 </a>
                 {{-- /Logo --}}
@@ -16,31 +16,31 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">characters</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'active' : ''}}" href="{{ route('home') }}">characters</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">comics</a>
+                            <a class="nav-link {{ Str::is('comic*', Route::currentRouteName()) ? 'active' : ''}}" href="{{ route('comics') }}">comics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">movies</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{ route('home') }}">movies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">tv</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="{{ route('home') }}">tv</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">games</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'games' ? 'active' : ''}}" href="{{ route('home') }}">games</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">collectibles</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'collectibles' ? 'active' : ''}}" href="{{ route('home') }}">collectibles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">videos</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="{{ route('home') }}">videos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">fans</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'fans' ? 'active' : ''}}" href="{{ route('home') }}">fans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">news</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'news' ? 'active' : ''}}" href="{{ route('home') }}">news</a>
                         </li>
                         {{-- Dropdown shop --}}
                         <li class="nav-item dropdown">

@@ -13,14 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/home', function () {
+
+    
+    return redirect('/');
+})->name('home');
+
 Route::get('/', function () {
 
     $comics = config('db.comics');
     $cards = config('db.cards');
     $menu = config('db.menu');
     
-    return view('home', compact('comics', 'cards', 'menu'));
-})->name('home');
+    return view('comics', compact('comics', 'cards', 'menu'));
+})->name('comics');
 
 Route::get('/comic/{index}', function ($index) {
 
@@ -31,5 +37,5 @@ Route::get('/comic/{index}', function ($index) {
     $cards = config('db.cards');
     $menu = config('db.menu');
     
-    return view('comic', compact('comics', 'cards', 'menu'));
+    return view('title', compact('comics', 'cards', 'menu'));
 })->name('comic');
