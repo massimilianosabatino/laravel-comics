@@ -18,6 +18,8 @@
         a {
             text-transform: uppercase;
             color: #D8D8D8;
+            font-weight: 700;
+            font-size: .8125rem;
             display: flex;
 
             .rapid-link-img {
@@ -30,7 +32,15 @@
                         object-position: -4px 0;
                     }
                     &.b{
+                        width: 37px;
                         object-position: right top;
+                    }
+                    &.c{
+                        object-position: -78px top;
+                    }
+                    &.d{
+                        width: 37px;
+                        object-position: -37px top;
                     }
                 }
             }

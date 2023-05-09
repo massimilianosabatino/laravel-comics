@@ -132,25 +132,25 @@
                 <div class="col-3 border-start p-3">
                     <a href="#">
                         <div class="rapid-link-text col">Digital comics</div>
-                        <div class="rapid-link-img col-1 ms-auto"><img class="a" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
+                        <div class="rapid-link-img col-2 ms-auto"><img class="a" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
                     </a>
                 </div>
                 <div class="col-3 border-start p-3">
                     <a href="#">
                         <div class="rapid-link-text col">Shop DC</div>
-                        <div class="rapid-link-img col-1 ms-auto"><img class="b" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
+                        <div class="rapid-link-img col-2 ms-auto"><img class="b" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
                     </a>
                 </div>
                 <div class="col-3 border-start p-3">
                     <a href="#">
                         <div class="rapid-link-text col">Comic Shop Locator</div>
-                        <div class="rapid-link-img col-1 ms-auto"><img class="c" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
+                        <div class="rapid-link-img col-2 ms-auto"><img class="c" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
                     </a>
                 </div>
                 <div class="col-3 border-start border-end p-3">
                     <a href="#">
                         <div class="rapid-link-text col">Subscriptions</div>
-                        <div class="rapid-link-img col-1 ms-auto"><img class="d" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
+                        <div class="rapid-link-img col-2 ms-auto"><img class="d" src="{{ Vite::asset('resources/img/cta-icons.png') }}" alt=""></div>
                     </a>
                 </div>
             </div>
