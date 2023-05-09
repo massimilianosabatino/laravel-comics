@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-8">
                 {{-- Comic title --}}
                 <h1>{{ $comics['title'] }}</h1>
@@ -47,7 +47,7 @@
                     {{-- /Right container - dropdown --}}
                 </div>
                 {{-- /Price bar --}}
-                <div class="description">
+                <div class="description py-3">
                     <p>{{ $comics['description'] }}</p>
                 </div>
                 
@@ -61,16 +61,18 @@
 
     </div>
 </section>
-<section id="extra">
+<section id="extra" class="border-top mt-5 pt-4">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <h2>Talent</h2>
-                <div class="row">
+        <div class="row gx-5">
+            <div class="col-6 pe-4">
+                <div class="border-bottom py-3">
+                    <h2>Talent</h2>
+                </div>
+                <div class="row border-bottom py-3">
                     <div class="col-4">
                         <h3>Art by:</h3>
                     </div>
-                    <div class="col-6">
+                    <div class="col-8">
                         @foreach ($comics['artists'] as $artist)
                         @if ($loop->last)
                             <a href="#">{{ $artist }}</a>  
@@ -80,11 +82,11 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-bottom py-3">
                     <div class="col-4">
                         <h3>Written by:</h3>
                     </div>
-                    <div class="col-6">
+                    <div class="col-8">
                         @foreach ($comics['writers'] as $writer)
                             @if ($loop->last)
                                 <a href="#">{{ $writer }}</a>
@@ -95,56 +97,62 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <h2>Specs</h2>
-                <div class="row">
+            <div class="col-6 ps-4">
+                <div class="border-bottom py-3">
+                    <h2>Specs</h2>
+                </div>
+                <div class="row border-bottom py-3">
                     <div class="col-4">
                         <h3>Series:</h3>
                     </div>
-                    <div class="col-6">
+                    <div class="col-8">
                         <a href="#">{{ $comics['series'] }}</a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-bottom py-3">
                     <div class="col-4">
                         <h3>U.S. Price:</h3>
                     </div>
-                    <div class="col-6">
+                    <div class="col-8">
                         {{ $comics['price'] }}
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-bottom py-3">
                     <div class="col-4">
                         <h3>On Sale Date:</h3>
                     </div>
-                    <div class="col-6">{{ $comics['sale_date'] }}</div>
+                    <div class="col-8">{{ $comics['sale_date'] }}</div>
                 </div>
             </div>
         </div>
-        <div id="rapid-links" class="row">
-            <div class="col-3">
-                <a href="#">
-                    <div class="rapid-link-text col">Digital comics</div>
-                    <div class="rapid-link-img col"></div>
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="#">
-                    <div class="rapid-link-text col">Shop DC</div>
-                    <div class="rapid-link-img col"></div>
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="#">
-                    <div class="rapid-link-text col">Comic Shop Locator</div>
-                    <div class="rapid-link-img col"></div>
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="#">
-                    <div class="rapid-link-text col">Subscriptions</div>
-                    <div class="rapid-link-img col"></div>
-                </a>
+    </div>
+    <div id="rapid-links" class="border-top mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 border-start p-3">
+                    <a href="#">
+                        <div class="rapid-link-text col">Digital comics</div>
+                        <div class="rapid-link-img col"></div>
+                    </a>
+                </div>
+                <div class="col-3 border-start p-3">
+                    <a href="#">
+                        <div class="rapid-link-text col">Shop DC</div>
+                        <div class="rapid-link-img col"></div>
+                    </a>
+                </div>
+                <div class="col-3 border-start p-3">
+                    <a href="#">
+                        <div class="rapid-link-text col">Comic Shop Locator</div>
+                        <div class="rapid-link-img col"></div>
+                    </a>
+                </div>
+                <div class="col-3 border-start border-end p-3">
+                    <a href="#">
+                        <div class="rapid-link-text col">Subscriptions</div>
+                        <div class="rapid-link-img col"></div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
