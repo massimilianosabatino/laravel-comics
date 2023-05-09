@@ -59,7 +59,7 @@
                     <form class="d-flex">
                         <div class="input-group border-bottom">
                             <input class="form-control ms-2 border-0 text-end" type="search" placeholder="Search" aria-label="Search">
-                            <div class="input-group-text border-0 bg-white">@</div>
+                            <div class="input-group-text border-0 bg-white"><i class="fa-solid fa-magnifying-glass"></i></div>
                         </div>
                     {{-- <button class="btn btn-outline-success" type="submit">Search</button> --}}
                     </form>
