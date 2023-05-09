@@ -54,11 +54,73 @@
             </div>
             {{-- Sidebar --}}
             <div class="col-4 adv">
-                <h2 class="text-end">ADVERTISEMENT</h3>
+                <h3 class="text-end">ADVERTISEMENT</h3>
                 <div class="text-end"><img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt=""></div>
             </div>
         </div>
 
+    </div>
+</section>
+<section id="extra">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2>Talent</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Art by:</h3>
+                    </div>
+                    <div class="col-6">
+                        @foreach ($comics['artists'] as $artist)
+                        @if ($loop->last)
+                            <a href="#">{{ $artist }}</a>  
+                        @else
+                        <a href="#">{{ $artist }}</a>, 
+                        @endif
+                        @endforeach
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Written by:</h3>
+                    </div>
+                    <div class="col-6">
+                        @foreach ($comics['writers'] as $writer)
+                            @if ($loop->last)
+                                <a href="#">{{ $writer }}</a>
+                            @else
+                                <a href="#">{{ $writer }}</a>, 
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>Specs</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Series:</h3>
+                    </div>
+                    <div class="col-6">
+                        <a href="#">{{ $comics['series'] }}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>U.S. Price:</h3>
+                    </div>
+                    <div class="col-6">
+                        {{ $comics['price'] }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>On Sale Date:</h3>
+                    </div>
+                    <div class="col-6">{{ $comics['sale_date'] }}</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 {{-- /Main content --}}
