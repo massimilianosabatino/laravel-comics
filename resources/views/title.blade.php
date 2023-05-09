@@ -121,6 +121,32 @@
                 </div>
             </div>
         </div>
+        <div id="rapid-links" class="row">
+            <div class="col-3">
+                <a href="#">
+                    <div class="rapid-link-text col">Digital comics</div>
+                    <div class="rapid-link-img col"></div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <div class="rapid-link-text col">Shop DC</div>
+                    <div class="rapid-link-img col"></div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <div class="rapid-link-text col">Comic Shop Locator</div>
+                    <div class="rapid-link-img col"></div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <div class="rapid-link-text col">Subscriptions</div>
+                    <div class="rapid-link-img col"></div>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 {{-- /Main content --}}
