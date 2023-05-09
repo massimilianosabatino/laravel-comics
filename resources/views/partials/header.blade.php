@@ -1,4 +1,23 @@
 <header>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-2">
+                    <a href="#">DC Power<span>℠</span> Visa©</a>
+                </div>
+                <div class="col-2 dropdown">
+                    <a class="dropdown-toggle" href="{{ route('home') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Addictional DC Site</a> 
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         {{-- Main menu --}}
         <nav class="navbar navbar-expand-lg navbar-light bg-white" id="main-menu">
@@ -14,7 +33,7 @@
                 </button>
                 {{-- /Collapsed menu --}}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'active' : ''}}" href="{{ route('home') }}">characters</a>
                         </li>

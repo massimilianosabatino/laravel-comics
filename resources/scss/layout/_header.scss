@@ -1,0 +1,35 @@
+header{
+    // height: 140px;
+
+    .top-bar{
+        // height: 25px;
+        background-color: $ms-primary-color;
+        font-weight: 600;
+        font-size: 10px;
+        a{
+            color: #fff;
+
+        }
+    }
+    .container{
+        // height: 100%;
+
+    }
+    #main-menu{
+        // height: 100%;
+
+        .nav-item{
+            // height: 115px;
+            // line-height: 115px;
+            .nav-link{
+                &.active{
+                    --bs-navbar-active-color: #0282F9;
+                    color: --ms-primary-color;
+                }
+            }
+        }
+        form{
+            max-width: 200px;
+        }
+    }
+}
